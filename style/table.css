@@ -1,0 +1,79 @@
+/* Google Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f4f7fc;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Table Container for Responsiveness and Shadow */
+.table-container {
+    width: 100%;
+    max-width: 900px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+/* Main Table Styling */
+.cool-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+/* Header Styling */
+.cool-table thead tr {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.cool-table th, 
+.cool-table td {
+    padding: 16px 20px;
+}
+
+/* Zebra Striping & Border */
+.cool-table tbody tr {
+    border-bottom: 1px solid #edf2f7;
+    transition: all 0.2s ease;
+}
+
+.cool-table tbody tr:nth-of-type(even) {
+    background-color: #f8fafc;
+}
+
+/* Smooth Hover Effect */
+.cool-table tbody tr:hover {
+    background-color: #edf2f7;
+    transform: scale(1.005);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Styling for Status Badges */
+.badge {
+    padding: 6px 12px;
+    border-radius: 50px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.badge.active {
+    background-color: #e6fffa;
+    color: #00a389;
+}
+
+.badge.pending {
+    background-color: #fefcbf;
+    color: #b7791f;
+}
+
+.badge.inactive {
+    background-color: #fed7d7;
+    color: #e53e3e;
+}

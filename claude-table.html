@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cool Table</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: system-ui, sans-serif;
+      background: #f4f3ff;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 3rem 1rem;
+      min-height: 100vh;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 820px;
+    }
+
+    .tbl-title {
+      font-size: 22px;
+      font-weight: 600;
+      color: #1a1a2e;
+      margin-bottom: 4px;
+    }
+
+    .tbl-sub {
+      font-size: 13px;
+      color: #888;
+      margin-bottom: 1.25rem;
+    }
+
+    .outer {
+      background: #fff;
+      border: 1px solid #e0defc;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 24px rgba(83, 74, 183, 0.08);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      table-layout: fixed;
+    }
+
+    thead tr {
+      background: #534AB7;
+    }
+
+    thead th {
+      color: #EEEDFE;
+      font-size: 11.5px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      padding: 13px 16px;
+      text-align: left;
+    }
+
+    thead th:first-child { border-radius: 0; }
+
+    tbody tr {
+      border-bottom: 1px solid #f0effe;
+      transition: background 0.15s;
+    }
+
+    tbody tr:hover { background: #f4f3ff; }
+    tbody tr:last-child { border-bottom: none; }
+
+    tbody td {
+      padding: 12px 16px;
+      font-size: 13.5px;
+      color: #1a1a2e;
+      vertical-align: middle;
+    }
+
+    .name-cell {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .avatar {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 11px;
+      font-weight: 600;
+      flex-shrink: 0;
+    }
+
+    .av-p { background: #CECBF6; color: #3C3489; }
+    .av-t { background: #9FE1CB; color: #085041; }
+    .av-c { background: #F5C4B3; color: #712B13; }
+    .av-b { background: #B5D4F4; color: #0C447C; }
+    .av-g { background: #C0DD97; color: #27500A; }
+    .av-a { background: #FAC775; color: #633806; }
+
+    .dept {
+      color: #888;
+      font-size: 13px;
+    }
+
+    .progress-wrap {
+      background: #ededf7;
+      border-radius: 99px;
+      height: 7px;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .progress-bar {
+      height: 100%;
+      border-radius: 99px;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 3px 11px;
+      border-radius: 20px;
+      font-size: 11.5px;
+      font-weight: 600;
+    }
+
+    .badge-green  { background: #EAF3DE; color: #3B6D11; }
+    .badge-amber  { background: #FAEEDA; color: #854F0B; }
+    .badge-red    { background: #FCEBEB; color: #A32D2D; }
+    .badge-blue   { background: #E6F1FB; color: #185FA5; }
+
+    tfoot tr { background: #f8f7ff; }
+
+    tfoot td {
+      padding: 11px 16px;
+      font-size: 12px;
+      color: #888;
+      font-weight: 600;
+      border-top: 1px solid #e0defc;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <p class="tbl-title">Team Performance</p>
+    <p class="tbl-sub">Q2 2026 &middot; 10 members &middot; Updated today</p>
+    <div class="outer">
+      <table>
+        <thead>
+          <tr>
+            <th style="width:22%">Member</th>
+            <th style="width:18%">Department</th>
+            <th style="width:15%">Tasks</th>
+            <th style="width:25%">Progress</th>
+            <th style="width:20%">Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><div class="name-cell"><span class="avatar av-p">AK</span><span>Aria Kim</span></div></td>
+            <td class="dept">Design</td>
+            <td>42 / 50</td>
+            <td><div class="progress-wrap"><div class="progress-bar" style="width:84%;background:#534AB7"></div></div></td>
+            <td><span class="badge badge-green">On track</span></td>
+          </tr>
+          <tr>
+            <td><div class="name-cell"><span class="avatar av-t">JP</span><span>James Park</span></div></td>
+            <td class="dept">Engineering</td>
+            <td>38 / 45</td>
+            <td><div class="progress-wrap"><div class="progress-bar" style="width:84%;background:#0F6E56"></div></div></td>
+            <td><span class="badge badge-green">On track</span></td>
+          </tr>
+          <tr>
+            <td><div class="name-cell"><span class="avatar av-c">MR</span><span>Maya Rios</span></div></td>
+            <td class="dept">Marketing</td>
+            <td>19 / 40</td>
+            <td><div class="progress-wrap"><div class="progress-bar" style="width:47%;background:#D85A30"></div></div></td>
+            <td><span class="badge badge-red">At risk</span></td>
+          </tr>
+          <tr>
+            <td><div class="name-cell"><span class="avatar av-b">TD</span><span>Tom Dahl</span></div></td>
+            <td class="dept">Sales</td>
+            <td>31 / 38</td>
+            <td><div class="progress-wrap"><div class="progress-bar" style="width:81%;background:#185FA5"></div></div></td>
+            <td><span class="badge badge-green">On track</span></td>
+          </tr>
+          <tr>
+            <td><div class="name-cell"><span class="avatar av-g">SL</span><span>Sara Lee</span></div></td>
+            <td class="dept">Engineering</td>
+            <td>27 / 45</td>
+            <td><div class="progress-wrap"><div class="progress-bar" style="width:60%;background:#639922"></div></div></td>
+            <td><span class="badge badge-amber">Review</span></td>
+          </tr>
+          <tr>
+            <td><div class="name-cell"><span class="avatar av-a">OM</span><span>Omar Malik</span></div></td>
+            <td class="dept">Finance</td>
+            <td>44 / 44</td>
+            <td><div class="progress-wrap"><div class="progress-bar" style="width:100%;background:#BA7517"></div></div></td>
+            <td><span class="badge badge-blue">Complete</span></td>
+          </tr>
+          <tr>
+            <td><div class="name-cell"><span class="avatar av-p">NW</span><span>Nina Walsh</span></div></td>
+            <td class="dept">Design</td>
+            <td>33 / 50</td>
+            <td><div class="progress-wrap"><div class="progress-bar" style="width:66%;background:#7F77DD"></div></div></td>
+            <td><span class="badge badge-amber">Review</span></td>
+          </tr>
+          <tr>
+            <td><div class="name-cell"><span class="avatar av-t">BN</span><span>Ben Ngo</span></div></td>
+            <td class="dept">Engineering</td>
+            <td>40 / 45</td>
+            <td><div class="progress-wrap"><div class="progress-bar" style="width:89%;background:#1D9E75"></div></div></td>
+            <td><span class="badge badge-green">On track</span></td>
+          </tr>
+          <tr>
+            <td><div class="name-cell"><span class="avatar av-c">CI</span><span>Clara Ibarra</span></div></td>
+            <td class="dept">Marketing</td>
+            <td>14 / 40</td>
+            <td><div class="progress-wrap"><div class="progress-bar" style="width:35%;background:#993C1D"></div></div></td>
+            <td><span class="badge badge-red">At risk</span></td>
+          </tr>
+          <tr>
+            <td><div class="name-cell"><span class="avatar av-b">DP</span><span>Dev Patel</span></div></td>
+            <td class="dept">Sales</td>
+            <td>36 / 38</td>
+            <td><div class="progress-wrap"><div class="progress-bar" style="width:95%;background:#378ADD"></div></div></td>
+            <td><span class="badge badge-blue">Complete</span></td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="2">10 members total</td>
+            <td>324 / 435</td>
+            <td><div class="progress-wrap"><div class="progress-bar" style="width:74%;background:#888"></div></div></td>
+            <td>74% overall</td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+  </div>
+</body>
+</html>
