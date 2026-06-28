@@ -5,53 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flex Starter</title>
     <style>
+      body {
+        background-color: goldenrod;
+      }
+      .box-container {
+        display: flex;
+        gap: 2rem;
+        margin-bottom: 5rem;
+      }
 
-        body {
-          background-color: goldenrod;
-        }
-        .box-container {
-            display: flex;
-            gap: 2rem;
-            margin-bottom: 5rem;
-        }
+      .box {
+        height: 5rem;
+        width: 4rem;
+        background-color: seagreen;
+        color: gold;
+        font-size: 2rem;
+        border: 5px solid skyblue;
+        text-align: center;
+        /* display: flex; */
+        /* justify-content: center; */
+      }
 
-        .box{
-            height: 5rem;
-            width: 4rem;
-            background-color: seagreen;
-            color: gold;
-            font-size: 2rem;
-            border: 5px solid skyblue;
-            text-align: center;
-            /* display: flex; */
-            /* justify-content: center; */
-        }
+      .user-container {
+        display: flex;
+        justify-content: space-around;
+      }
 
-        .user-container {
-          display: flex;
-          justify-content: space-around;
-        }
+      .card-container {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: 2rem;
+        margin: 2rem 2rem;
+      }
 
-        .card-container {
-          display: flex;
-          justify-content: space-evenly;
-          flex-wrap: wrap;
-          gap: 2rem;
-          margin: 2rem 2rem;
-        }
+      .user {
+        border: 5px solid darkred;
+        height: 150px;
+        width: 150px;
+        background-color: fuchsia;
+        font-size: 1.5rem;
+        text-align: center;
+      }
+      nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        /* margin-right: 20px; */
+      }
 
-        .user{
-          border: 5px solid darkred;
-          height: 150px;
-          width: 150px;
-          background-color: fuchsia;
-          font-size: 1.5rem;
-          text-align: center;
-        }
+      nav li:hover {
+        background-color: burlywood;
+        /* padding: 0px 20px; */
+      }
 
+      nav li a {
+        text-decoration: none;
+        color: brown;
+      }
     </style>
   </head>
   <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="legend.html">Flex</a></li>
+          <li><a href="centerflex.html">Center</a></li>
+          <li><a href="table.html">Table</a></li>
+        </ul>
+      </nav>
+    </header>
     <div class="box-container">
       <div class="box">1</div>
       <div class="box">2</div>
@@ -90,6 +114,5 @@
       <div class="user">user-19</div>
       <div class="user">user-20</div>
     </div>
-
   </body>
 </html>

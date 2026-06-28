@@ -77,3 +77,11 @@ body {
     background-color: #fed7d7;
     color: #e53e3e;
 }
+
+/* navigation area */
+
+nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}

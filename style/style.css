@@ -1,5 +1,5 @@
 * {
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
 
 div {
@@ -67,17 +67,19 @@ div {
     text-align: justify;
 }
 
-nav li {
+nav ul {
   list-style: none;
-  display: inline;
-  margin-right: 20px;
+  display: flex;
+  justify-content: space-between ;
+  /* margin-right: 20px; */
 }
 
 nav li:hover {
   background-color: burlywood;
-  padding: 20px;
+  /* padding: 0px 20px; */
 }
 
 nav li a {
   text-decoration: none;
+  color: brown;
 }

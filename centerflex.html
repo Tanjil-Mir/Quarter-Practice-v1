@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Center Flex</title>
+
+    <style>
+      .container {
+        display: flex;
+        background-color: lightseagreen;
+        height: 800px;
+        justify-content: center;
+        border: 10px solid darkred;
+        align-items: center;
+      }
+
+      .box {
+        height: 300px;
+        width: 300px;
+        font-size: 2rem;
+        background-color: crimson;
+        border: 10px solid rgb(0, 70, 94);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 700;
+        font-family: Georgia, "Times New Roman", Times, serif;
+      }
+      nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        /* margin-right: 20px; */
+      }
+
+      nav li:hover {
+        background-color: burlywood;
+        /* padding: 0px 20px; */
+      }
+
+      nav li a {
+        text-decoration: none;
+        color: brown;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="flexstart.html">Flex</a></li>
+          <li><a href="legend.html">Center</a></li>
+          <li><a href="table.html">Table</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <div class="box">
+        <p>Ankara Messi</p>
+      </div>
+    </div>
+  </body>
+</html>
