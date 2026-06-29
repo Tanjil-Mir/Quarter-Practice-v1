@@ -1,0 +1,51 @@
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around ;
+  /* margin-right: 20px; */
+}
+nav li {
+    background-color: aqua;
+    padding: 10px 30px;
+    border-radius: 5px;
+    box-shadow: 5px 6px 10px grey;
+}
+nav li:hover {
+  background-color: burlywood;
+  /* padding: 0px 20px; */
+}
+
+nav li a {
+  text-decoration: none;
+  color: brown;
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body{
+    background-color: lightsalmon;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.hero-container {
+    display: flex;
+    background-color: rgb(217, 132, 250);
+    padding: 20px;
+    align-items: center;
+    border-radius: 15px;
+    border: 5px solid darkviolet;
+}
+.hero-container button {
+    background-color: rgba(255, 25, 255, 0.747);
+    padding: 10px 20px;
+    font-size: 1.25rem;
+    border-radius: 10px;
+    border: 2px solid navy;
+    cursor: pointer;
+}
+.hero-container img {
+    width: 100%;
+    border-radius: 10px;
+}
